@@ -17,9 +17,9 @@ const Page = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const response = await fetch(`https://reqres.in/api/users?page=${page}`);
-      const json = await response.json();
-      setUsers(json.data);
+      const response = await fetch(`https://reqres.in/api/users/page=${page}`);
+      const data = await response.json();
+      setUsers(data);
     };
 
     fetchUsers();
