@@ -132,7 +132,7 @@ const Page = () => {
       <button
         type="button"
         onClick={() => {
-          setShowSaved(true);
+          setShowSaved(false);
         }}
       >
         Show Regular List
